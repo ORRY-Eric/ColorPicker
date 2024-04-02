@@ -1,0 +1,330 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkev7aljdv505"]
+
+[ext_resource type="PackedScene" uid="uid://lg0qkjxets0i" path="res://BoxColor.tscn" id="1_kw76p"]
+[ext_resource type="Script" path="res://ui.cs" id="1_rbawa"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_48ns8"]
+font_size = 25
+
+[sub_resource type="LabelSettings" id="LabelSettings_fwvl1"]
+font_size = 35
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rbawa")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Titre" type="Label" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 35.0
+grow_horizontal = 2
+text = "Color Picker"
+label_settings = SubResource("LabelSettings_48ns8")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer"]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 23.0
+offset_top = 147.0
+offset_right = 23.0
+offset_bottom = 151.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.96, 3.92)
+
+[node name="VSeparator" type="VSeparator" parent="CanvasLayer"]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 264.0
+offset_top = 80.0
+offset_right = 268.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.84, 0.52)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.0243056
+anchor_top = 0.783951
+anchor_right = 0.0590278
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+size_flags_horizontal = 0
+color = Color(1, 0, 0, 1)
+
+[node name="BoxColor2" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.0763889
+anchor_top = 0.783951
+anchor_right = 0.111111
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0, 1, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor3" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.128472
+anchor_top = 0.783951
+anchor_right = 0.163194
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor4" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.180556
+anchor_top = 0.783951
+anchor_right = 0.215278
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0.803922, 0.00392157, 0.996078, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor5" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.232639
+anchor_top = 0.783951
+anchor_right = 0.267361
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+size_flags_horizontal = 0
+color = Color(0.941176, 0.972549, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor6" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.284722
+anchor_top = 0.783951
+anchor_right = 0.319444
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0, 1, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor7" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.336805
+anchor_top = 0.783951
+anchor_right = 0.371528
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0.647059, 0.164706, 0.164706, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor8" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.388889
+anchor_top = 0.783951
+anchor_right = 0.423611
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(1, 0.498039, 0.313726, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor9" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.440104
+anchor_top = 0.783951
+anchor_right = 0.474826
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+size_flags_horizontal = 0
+color = Color(0.823529, 0.411765, 0.117647, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor10" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.492187
+anchor_top = 0.783951
+anchor_right = 0.52691
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0.862745, 0.0784314, 0.235294, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor11" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.544271
+anchor_top = 0.783951
+anchor_right = 0.578993
+anchor_bottom = 0.845679
+offset_left = 6.10352e-05
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0.721569, 0.52549, 0.0431373, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor12" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.596354
+anchor_top = 0.783951
+anchor_right = 0.631076
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0, 0.545098, 0.545098, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor13" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.648437
+anchor_top = 0.783951
+anchor_right = 0.68316
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+size_flags_horizontal = 0
+color = Color(0, 0.392157, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor14" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.700521
+anchor_top = 0.783951
+anchor_right = 0.735243
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0.913725, 0.588235, 0.478431, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor15" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.752604
+anchor_top = 0.783951
+anchor_right = 0.787326
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0.466667, 0.611765, 0.478431, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="BoxColor16" parent="CanvasLayer" instance=ExtResource("1_kw76p")]
+anchors_preset = -1
+anchor_left = 0.804687
+anchor_top = 0.783951
+anchor_right = 0.83941
+anchor_bottom = 0.845679
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(1, 0.0784314, 0.576471, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="R" type="Label" parent="CanvasLayer"]
+offset_left = 923.0
+offset_top = 94.0
+offset_right = 964.0
+offset_bottom = 143.0
+text = "R :"
+label_settings = SubResource("LabelSettings_fwvl1")
+
+[node name="SpinBox" type="SpinBox" parent="CanvasLayer/R"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 12.0
+offset_right = 133.062
+offset_bottom = 43.0
+max_value = 255.0
+
+[node name="G" type="Label" parent="CanvasLayer"]
+offset_left = 923.0
+offset_top = 177.0
+offset_right = 967.0
+offset_bottom = 226.0
+text = "G :"
+label_settings = SubResource("LabelSettings_fwvl1")
+
+[node name="SpinBox" type="SpinBox" parent="CanvasLayer/G"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 12.0
+offset_right = 133.062
+offset_bottom = 43.0
+max_value = 255.0
+
+[node name="B" type="Label" parent="CanvasLayer"]
+offset_left = 923.0
+offset_top = 260.0
+offset_right = 965.0
+offset_bottom = 309.0
+text = "B :"
+label_settings = SubResource("LabelSettings_fwvl1")
+
+[node name="SpinBox" type="SpinBox" parent="CanvasLayer/B"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 12.0
+offset_right = 133.062
+offset_bottom = 43.0
+max_value = 255.0
+
+[node name="A" type="Label" parent="CanvasLayer"]
+offset_left = 923.0
+offset_top = 343.0
+offset_right = 965.0
+offset_bottom = 392.0
+text = "A :"
+label_settings = SubResource("LabelSettings_fwvl1")
+
+[node name="SpinBox" type="SpinBox" parent="CanvasLayer/A"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 12.0
+offset_right = 133.062
+offset_bottom = 43.0
+max_value = 255.0
+value = 255.0
+
+[node name="Text Color Picker" type="Label" parent="CanvasLayer"]
+offset_left = 39.0
+offset_top = 225.0
+offset_right = 233.0
+offset_bottom = 248.0
+text = "Sélectionner une couleur
+"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="CanvasLayer/Text Color Picker"]
+layout_mode = 0
+offset_left = 205.0
+offset_top = -6.0
+offset_right = 218.0
+offset_bottom = 25.0
+action_mode = 0
+text = "      "
+
+[connection signal="value_changed" from="CanvasLayer/R/SpinBox" to="." method="_on_spin_box_value_changed_R"]
+[connection signal="value_changed" from="CanvasLayer/G/SpinBox" to="." method="_on_spin_box_value_changed_Green"]
+[connection signal="value_changed" from="CanvasLayer/B/SpinBox" to="." method="_on_spin_box_value_changed_Blue"]
+[connection signal="value_changed" from="CanvasLayer/A/SpinBox" to="." method="_on_spin_box_value_changed_Alpha"]
+[connection signal="color_changed" from="CanvasLayer/Text Color Picker/ColorPickerButton" to="." method="_on_color_picker_button_color_changed"]

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://8jsxp4pl32f0"]
+
+[ext_resource type="Script" path="res://principal.cs" id="1_kkeuj"]
+[ext_resource type="PackedScene" uid="uid://7p2484pjrxvk" path="res://cube.tscn" id="1_yywg2"]
+[ext_resource type="PackedScene" uid="uid://bkev7aljdv505" path="res://ui.tscn" id="3_ltw4r"]
+
+[node name="Principal" type="Node3D"]
+script = ExtResource("1_kkeuj")
+
+[node name="Cube" parent="." instance=ExtResource("1_yywg2")]
+transform = Transform3D(0.627172, 0.362366, 0.689453, 0.162306, 0.804949, -0.570714, -0.761782, 0.469838, 0.446027, 0, 0.447542, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.16466)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="UI" parent="." instance=ExtResource("3_ltw4r")]
